@@ -1,54 +1,14 @@
 var dugoutApp = angular.module('dugoutApp', []);
 
-dugoutApp.controller('TeamCtrl', function ($scope) {
-    $scope.players = [
-        {
-            "max": 16,
-            "title": "Lineman",
-            "cost": 70000,
-            "ma": 6,
-            "st": 3,
-            "ag": 4,
-            "av": 8,
-            "skills": [],
-            "normal": ["General", "Agility"],
-            "double": ["Strength", "Passing"]
-        }
-        ,{
-            "max": 2,
-            "title": "Thrower",
-            "cost": 90000,
-            "ma": 6,
-            "st": 3,
-            "ag": 4,
-            "av": 8,
-            "skills": ["Pass", "Safe Throw"],
-            "normal": ["General", "Agility", "Passing"],
-            "double": ["Strength"]
-        },
-        {
-            "max": 4,
-            "title": "Catcher",
-            "cost": 90000,
-            "ma": 8,
-            "st": 3,
-            "ag": 4,
-            "av": 7,
-            "skills": ["Catch"],
-            "normal": ["General", "Agility"],
-            "double": ["Strength", "Passing"]
-        },
-        {
-            "max": 2,
-            "title": "Blitzer",
-            "cost": 100000,
-            "ma": 7,
-            "st": 3,
-            "ag": 4,
-            "av": 8,
-            "skills": ["Block"],
-            "normal": ["General", "Agility"],
-            "double": ["Strength", "Passing"]
-        }
-    ];
+dugoutApp.controller('RaceListCtrl', function ($scope) {
+    $scope.races = [
+      {
+        "name": "Human",
+        "description": "Although Human teams do not have the individual strengths or outstanding abilities available to other races, they do not suffer from any outstanding weakness either."
+      },
+      {
+        "name": "Orc",
+        "description": "Orcs have been playing Blood Bowl since the game was invented, and Orc teams such as the Gouged Eye and Severed Heads are amongst the best in the league."
+      }
+    ]
 });

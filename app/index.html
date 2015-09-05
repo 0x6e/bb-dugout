@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app="dugoutApp">
+
+<head>
+  <script src="bower_components/angular/angular.js"></script>
+</head>
+
+<body ng-controller="RaceListCtrl">
+
+  <h1>The Dugout</h1>
+
+  <p>Number of teams: {{races.length}}</p>
+
+  <ul>
+    <li ng-repeat="race in races">
+      <h3>{{race.name}}</h3>
+      <p>{{race.description}}</p>
+    </li>
+  </ul>
+
+  <script src="js/controllers.js"></script>
+</body>
+
+</html>
