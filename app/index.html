@@ -10,9 +10,10 @@
   <h1>The Dugout</h1>
 
   <p>Number of teams: {{races.length}}</p>
+  <p>Search: <input ng-model="query">
 
   <ul>
-    <li ng-repeat="race in races">
+    <li ng-repeat="race in races | filter:query">
       <h3>{{race.name}}</h3>
       <p>{{race.description}}</p>
     </li>

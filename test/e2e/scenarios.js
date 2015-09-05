@@ -2,10 +2,27 @@
 
 /* http://docs.angularjs.org/guide/dev_guide.e2e-testing */
 
-describe('my app', function() {
+describe('The Dugout App', function() {
 
-  beforeEach(function() {
-    browser.get('app/index.html');
+  describe('Race list view', function() {
+
+    beforeEach(function() {
+      browser.get('index.html');
+    });
+
+    it('should filter the race list as a user types into the search box', function() {
+
+      var raceList = element.all(by.repeater('race in races'));
+      var query = element(by.model('query'));
+
+      expect(raceList.count()).toBe(2);
+
+      query.sendKeys('Human');
+      expect(raceList.count()).toBe(1);
+
+      query.clear();
+      query.sendKeys('Orc');
+      expect(raceList.count()).toBe(1);
+    });
   });
-
 });
