@@ -15,8 +15,8 @@
       "skills": ["Horns"],
       "normal": ["General", "Strength", "Mutation"],
       "double": ["Agility", "Passing"]
-    }
-    ,{
+    },
+    {
       "max": 4,
       "title": "Chaos Warrior",
       "cost": 100000,
