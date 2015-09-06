@@ -2,24 +2,25 @@
 
 /* jasmine specs for controllers go here */
 
-describe('RaceListCtrl', function() {
-  var scope, ctrl, $httpBackend;
+describe('Dugout controllers', function() {
 
-  beforeEach(module('dugoutApp'));
+  describe('RaceListCtrl', function() {
+    var scope, ctrl, $httpBackend;
 
-  beforeEach(inject(function(_$httpBackend_, $rootScope, $controller) {
-    $httpBackend = _$httpBackend_;
-    $httpBackend.expectGET('races/races.json').respond([{name: 'Human'}, {name: 'Orc'}]);
+    beforeEach(module('dugoutApp'));
+    beforeEach(inject(function(_$httpBackend_, $rootScope, $controller) {
+      $httpBackend = _$httpBackend_;
+      $httpBackend.expectGET('races/races.json').respond([{name: 'Human'}, {name: 'Orc'}]);
 
-    scope = $rootScope.$new();
-    ctrl = $controller('RaceListCtrl', {$scope: scope});
-  }));
+      scope = $rootScope.$new();
+      ctrl = $controller('RaceListCtrl', {$scope: scope});
+    }));
 
-  it('should create "races" model with 2 races fetched from xhr', inject(function($controller) {
-    expect(scope.races).toBeUndefined();
-    $httpBackend.flush();
+    it('should create "races" model with 2 races fetched from xhr', inject(function($controller) {
+      expect(scope.races).toBeUndefined();
+      $httpBackend.flush();
 
-    expect(scope.races).toEqual([{name: 'Human'}, {name: 'Orc'}]);
-  }));
-
+      expect(scope.races).toEqual([{name: 'Human'}, {name: 'Orc'}]);
+    }));
+  });
 });
