@@ -1,0 +1,56 @@
+{
+  "name": "Amazon",
+  "description": "Long ago, driven by a desire for adventure, the Valkyries of the Norse settlement in Lustria sailed away from their men-folk and founded a colony deep within the estuary of the river Amaxon. Now these ferocious warriors have taken to the Blood Bowl pitch – and Nuffle save those who dare play against them!",
+  "rerollCap": 8,
+  "rerollPrice": 50000,
+  "players": [
+    {
+      "max": 16,
+      "title": "Linewoman",
+      "cost": 50000,
+      "ma": 6,
+      "st": 3,
+      "ag": 3,
+      "av": 7,
+      "skills": ["Dodge"],
+      "normal": ["General"],
+      "double": ["Agility", "Strength", "Passing"]
+    },
+    {
+      "max": 2,
+      "title": "Thrower",
+      "cost": 70000,
+      "ma": 6,
+      "st": 3,
+      "ag": 3,
+      "av": 7,
+      "skills": ["Dodge", "Pass"],
+      "normal": ["General", "Passing"],
+      "double": ["Agility", "Strength"]
+    },
+    {
+      "max": 2,
+      "title": "Catcher",
+      "cost": 70000,
+      "ma": 6,
+      "st": 3,
+      "ag": 3,
+      "av": 7,
+      "skills": ["Dodge", "Catch"],
+      "normal": ["General", "Agility"],
+      "double": ["Strength", "Passing"]
+    },
+    {
+      "max": 4,
+      "title": "Blitzer",
+      "cost": 90000,
+      "ma": 6,
+      "st": 3,
+      "ag": 3,
+      "av": 7,
+      "skills": ["Dodge", "Block"],
+      "normal": ["General", "Strength"],
+      "double": ["Agility", "Passing"]
+    }
+  ]
+}

@@ -50,7 +50,7 @@ describe('The Dugout App', function() {
     });
 
     it('should display a placeholder page with raceId', function() {
-      expect(element(by.binding('raceId')).getText()).toBe('amazon');
+      expect(element(by.binding('race.name')).getText()).toBe('Amazon');
     });
   });
 });

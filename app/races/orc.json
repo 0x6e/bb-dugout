@@ -1,0 +1,80 @@
+{
+  "name": "Orc",
+  "description": "Orcs have been playing Blood Bowl since the game was invented, and Orc teams such as the Gouged Eye and Severed Heads are amongst the best in the league. Orc teams are tough and hard-hitting, grinding down the opposition’s line to create gaps for their excellent Orc Blitzers to exploit.",
+  "rerollCap": 8,
+  "rerollPrice": 60000,
+  "players": [
+    {
+      "max": 16,
+      "title": "Lineman",
+      "cost": 50000,
+      "ma": 5,
+      "st": 3,
+      "ag": 3,
+      "av": 9,
+      "skills": [],
+      "normal": ["General"],
+      "double": ["Agility", "Strength", "Passing"]
+    },
+    {
+      "max": 4,
+      "title": "Goblin",
+      "cost": 40000,
+      "ma": 6,
+      "st": 2,
+      "ag": 3,
+      "av": 7,
+      "skills": ["Right Stuff", "Dodge", "Stunty"],
+      "normal": ["Agility"],
+      "double": ["General", "Strength", "Passing"]
+    },
+    {
+      "max": 2,
+      "title": "Thrower",
+      "cost": 70000,
+      "ma": 5,
+      "st": 3,
+      "ag": 3,
+      "av": 8,
+      "skills": ["Sure Hands", "Pass"],
+      "normal": ["General", "Passing"],
+      "double": ["Agility", "Strength"]
+    },
+    {
+      "max": 4,
+      "title": "Black Orc Blocker",
+      "cost": 80000,
+      "ma": 4,
+      "st": 4,
+      "ag": 2,
+      "av": 9,
+      "skills": [],
+      "normal": ["General", "Strength"],
+      "double": ["Agility", "Passing"]
+    },
+    {
+      "max": 4,
+      "title": "Blitzer",
+      "cost": 80000,
+      "ma": 6,
+      "st": 3,
+      "ag": 3,
+      "av": 9,
+      "skills": ["Block"],
+      "normal": ["General", "Strength"],
+      "double": ["Agility", "Passing"]
+    },
+    {
+      "max": 1,
+      "title": "Troll",
+      "cost": 110000,
+      "ma": 4,
+      "st": 5,
+      "ag": 1,
+      "av": 9,
+      "skills": ["Loner", "Always Hungry", "Mighty Blow", "Really Stupid", "Regeneration", "Throw Team-Mate"],
+      "normal": ["Strength"],
+      "double": ["Agility", "General", "Passing"]
+    }
+  ]
+}

@@ -7,7 +7,9 @@ dugoutControllers.controller('RaceListCtrl', ['$scope', '$http',
     });
   }]);
 
-dugoutControllers.controller('RaceDetailCtrl', ['$scope', '$routeParams',
-  function($scope, $routeParams) {
-    $scope.raceId = $routeParams.raceId;
+dugoutControllers.controller('RaceDetailCtrl', ['$scope', '$routeParams', '$http',
+  function($scope, $routeParams, $http) {
+    $http.get('races/' + $routeParams.raceId + '.json').success(function(data) {
+      $scope.race = data;
+    });
   }]);
