@@ -15,8 +15,8 @@
       "skills": [],
       "normal": ["General", "Agility"],
       "double": ["Strength", "Passing"]
-    }
-    ,{
+    },
+    {
       "max": 2,
       "title": "Thrower",
       "cost": 90000,

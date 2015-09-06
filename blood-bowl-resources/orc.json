@@ -15,8 +15,8 @@
       "skills": [],
       "normal": ["General"],
       "double": ["Agility", "Strength", "Passing"]
-    }
-    ,{
+    },
+    {
       "max": 4,
       "title": "Goblin",
       "cost": 40000,
