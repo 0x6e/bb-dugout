@@ -13,9 +13,9 @@
   <p>Number of teams: {{races.length}}</p>
   <p>Search: <input ng-model="query.name">
 
-  <ul>
+  <ul class="races">
     <li ng-repeat="race in races | filter:query">
-      <h3>{{race.name}}</h3>
+      <a href="#/races/{{race.id}}">{{race.name}}</a>
       <p>{{race.description}}</p>
     </li>
   </ul>

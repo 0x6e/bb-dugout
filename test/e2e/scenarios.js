@@ -32,7 +32,14 @@ describe('The Dugout App', function() {
       expect(browser.getTitle()).toMatch(/The Dugout\s*$/);
       query.sendKeys('Orc');
       expect(browser.getTitle()).toMatch(/The Dugout: Orc$/);
+    });
 
+    it('should render race specific links', function() {
+      query.sendKeys('amazon');
+      element.all(by.css('.races li a')).first().click();
+      browser.getLocationAbsUrl().then(function(url) {
+        expect(url).toBe('/races/amazon');
+      });
     });
   });
 });
