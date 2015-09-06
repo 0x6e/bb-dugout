@@ -10,13 +10,13 @@ describe('The Dugout App', function() {
       browser.get('index.html');
     });
 
-    var query = element(by.model('query'));
+    var query = element(by.model('query.name'));
 
     it('should filter the race list as a user types into the search box', function() {
 
       var raceList = element.all(by.repeater('race in races'));
 
-      expect(raceList.count()).toBe(2);
+      expect(raceList.count()).toBe(5);
 
       query.sendKeys('Human');
       expect(raceList.count()).toBe(1);

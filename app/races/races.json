@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Amazon",
+    "description": "Long ago, driven by a desire for adventure, the Valkyries of the Norse settlement in Lustria sailed away from their men-folk and founded a colony deep within the estuary of the river Amaxon."
+  },
+  {
+    "name": "Chaos Dwarf",
+    "description": "Chaos Dwarfs are the twisted descendants of Dwarf explorers who have been terribly affected by the forces of Chaos, turning them into evil, self-centred creatures."
+  },
+  {
+    "name": "Chaos",
+    "description": "Chaos teams are not noted for the subtlety or originality of their game play. A simple drive up the centre of the pitch, maiming and injuring as many opposing players as possible, is about the limit of their game plan."
+  },
+  {
+    "name": "Human",
+    "description": "Although Human teams do not have the individual strengths or outstanding abilities available to other races, they do not suffer from any outstanding weakness either."
+  },
+  {
+    "name": "Orc",
+    "description": "Orcs have been playing Blood Bowl since the game was invented, and Orc teams such as the Gouged Eye and Severed Heads are amongst the best in the league."
+  }
+]

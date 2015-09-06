@@ -3,14 +3,23 @@
 /* jasmine specs for controllers go here */
 
 describe('RaceListCtrl', function() {
+  var scope, ctrl, $httpBackend;
 
   beforeEach(module('dugoutApp'));
 
-  it('should create "races" model with 2 races', inject(function($controller) {
-    var scope = {},
-      ctrl = $controller('RaceListCtrl', {$scope:scope});
+  beforeEach(inject(function(_$httpBackend_, $rootScope, $controller) {
+    $httpBackend = _$httpBackend_;
+    $httpBackend.expectGET('races/races.json').respond([{name: 'Human'}, {name: 'Orc'}]);
 
-    expect(scope.races.length).toBe(2);
+    scope = $rootScope.$new();
+    ctrl = $controller('RaceListCtrl', {$scope: scope});
+  }));
+
+  it('should create "races" model with 2 races fetched from xhr', inject(function($controller) {
+    expect(scope.races).toBeUndefined();
+    $httpBackend.flush();
+
+    expect(scope.races).toEqual([{name: 'Human'}, {name: 'Orc'}]);
   }));
 
 });

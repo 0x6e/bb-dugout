@@ -2,7 +2,7 @@
 <html ng-app="dugoutApp" ng-controller="RaceListCtrl">
 
 <head>
-  <title ng-bind-template="The Dugout{{query.length > 0 ? ': ' + query : ''}}">The Dugout</title>
+  <title ng-bind-template="The Dugout{{query.name.length > 0 ? ': ' + query.name : ''}}">The Dugout</title>
   <script src="bower_components/angular/angular.js"></script>
 </head>
 
@@ -11,7 +11,7 @@
   <h1>The Dugout</h1>
 
   <p>Number of teams: {{races.length}}</p>
-  <p>Search: <input ng-model="query">
+  <p>Search: <input ng-model="query.name">
 
   <ul>
     <li ng-repeat="race in races | filter:query">
