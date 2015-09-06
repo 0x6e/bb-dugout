@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html ng-app="dugoutApp">
+<html ng-app="dugoutApp" ng-controller="RaceListCtrl">
 
 <head>
+  <title ng-bind-template="The Dugout{{query.length > 0 ? ': ' + query : ''}}">The Dugout</title>
   <script src="bower_components/angular/angular.js"></script>
 </head>
 
-<body ng-controller="RaceListCtrl">
+<body>
 
   <h1>The Dugout</h1>
 
