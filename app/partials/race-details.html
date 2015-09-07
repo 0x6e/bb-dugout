@@ -18,15 +18,15 @@
   <tr ng-repeat="player in race.players">
     <td>{{player.max}}</td>
     <td>{{player.title}}</td>
-    <td>{{player.cost}}</td>
+    <td>{{player.cost | number}}</td>
     <td>{{player.ma}}</td>
     <td>{{player.st}}</td>
     <td>{{player.ag}}</td>
     <td>{{player.av}}</td>
-    <td><span ng-repeat="skill in player.skills">{{skill}}, </span></td>
-    <td><span ng-repeat="type in player.normal">{{type}}, </span></td>
-    <td><span ng-repeat="type in player.double">{{type}}, </span></td>
+    <td>{{ player.skills | skill}}</td>
+    <td>{{player.normal | skillType}}</td>
+    <td>{{player.double | skillType}}</td>
   </tr>
 </table>
 
-<p>0-{{race.rerollCap}} Re-roll counters: {{race.rerollPrice}} gold pieces each</p>
+<p>0-{{race.rerollCap}} Re-roll counters: {{race.rerollPrice | number}} gold pieces each</p>

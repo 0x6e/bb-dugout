@@ -1,6 +1,7 @@
 var dugoutApp = angular.module('dugoutApp', [
   'ngRoute',
-  'dugoutControllers'
+  'dugoutControllers',
+  'dugoutFilters'
 ]);
 
 dugoutApp.config(['$routeProvider', function($routeProvider) {
