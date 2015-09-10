@@ -1,0 +1,68 @@
+{
+  "name": "Dark Elf",
+  "description": "Evil beyond belief, skilled without doubt, the Dark Elves take to the pitch to show the world their superiority. Dark Elf teams prefer a malevolent and spiteful running game over the passing of their goodly cousins. Backed up by the ruthless Witch Elves and dangerous Assassins, a Dark Elf team has all the tools to power through, rather than around, any opposition line.",
+  "rerollCap": 8,
+  "rerollPrice": 50000,
+  "players": [
+    {
+      "max": 16,
+      "title": "Lineman",
+      "cost": 70000,
+      "ma": 6,
+      "st": 3,
+      "ag": 4,
+      "av": 8,
+      "skills": [],
+      "normal": ["General", "Agility"],
+      "double": ["Strength", "Passing"]
+    },
+    {
+      "max": 2,
+      "title": "Runner",
+      "cost": 80000,
+      "ma": 7,
+      "st": 3,
+      "ag": 4,
+      "av": 7,
+      "skills": ["Dump-Off"],
+      "normal": ["General", "Agility", "Passing"],
+      "double": ["Strength"]
+    },
+    {
+      "max": 2,
+      "title": "Assasin",
+      "cost": 90000,
+      "ma": 6,
+      "st": 3,
+      "ag": 4,
+      "av": 7,
+      "skills": ["Shadowing, Stab"],
+      "normal": ["General", "Agility"],
+      "double": ["Strength", "Passing"]
+    },
+    {
+      "max": 4,
+      "title": "Blitzer",
+      "cost": 100000,
+      "ma": 7,
+      "st": 3,
+      "ag": 4,
+      "av": 8,
+      "skills": ["Block"],
+      "normal": ["General", "Agility"],
+      "double": ["Strength", "Passing"]
+    },
+    {
+      "max": 2,
+      "title": "Witch Elf",
+      "cost": 120000,
+      "ma": 7,
+      "st": 3,
+      "ag": 4,
+      "av": 7,
+      "skills": ["Frenzy", "Dodge", "Jump Up"],
+      "normal": ["General", "Agility"],
+      "double": ["Strength", "Passing"]
+    }
+  ]
+}

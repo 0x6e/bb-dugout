@@ -6,7 +6,7 @@
   "players": [
     {
       "max": 12,
-      "title": "Marauders",
+      "title": "Marauder",
       "cost": 50000,
       "ma": 6,
       "st": 3,
