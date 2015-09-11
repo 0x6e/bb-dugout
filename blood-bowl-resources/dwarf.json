@@ -1,0 +1,68 @@
+{
+  "name": "Dwarf",
+  "description": "Dwarfs seem to be ideal Blood Bowl players, being compact, tough, well-armoured and having a stubborn knack of refusing to die! Most successful Dwarf teams work to the principle that if they can take out all the other team’s potential scorers, and wear down the rest, then there won’t be anybody left to stop them scoring the winning touchdowns!",
+  "rerollCap": 8,
+  "rerollPrice":50000,
+  "players": [
+    {
+      "max": 16,
+      "title": "Blocker",
+      "cost": 70000,
+      "ma": 4,
+      "st": 3,
+      "ag": 2,
+      "av": 9,
+      "skills": ["Block", "Tackle", "Thick Skull"],
+      "normal": ["General", "Strength"],
+      "double": ["Agility", "Passing"]
+    },
+    {
+      "max": 2,
+      "title": "Runner",
+      "cost": 80000,
+      "ma": 6,
+      "st": 3,
+      "ag": 3,
+      "av": 8,
+      "skills": ["Sure Hands", "Thick Skull"],
+      "normal": ["General", "Passing"],
+      "double": ["Agility", "Strength"]
+    },
+    {
+      "max": 2,
+      "title": "Blitzer",
+      "cost": 80000,
+      "ma": 5,
+      "st": 3,
+      "ag": 2,
+      "av": 9,
+      "skills": ["Block",  "Thick Skull"],
+      "normal": ["General", "Strength"],
+      "double": ["Agility", "Passing"]
+    },
+    {
+      "max": 2,
+      "title": "Troll Slayer",
+      "cost": 90000,
+      "ma": 5,
+      "st": 3,
+      "ag": 2,
+      "av": 8,
+      "skills": ["Block", "Dautless", "Frenzy", "Thick Skull"],
+      "normal": ["General", "Strength"],
+      "double": ["Agility", "Passing"]
+    },
+    {
+      "max": 1,
+      "title": "Death Roller",
+      "cost": 160000,
+      "ma": 4,
+      "st": 7,
+      "ag": 1,
+      "av": 10,
+      "skills": ["Loner", "Break Tackle", "Dirty Player", "Juggernaught", "Mighty Blow", "No Hands", "Secret Weapon", "Stand Firm"],
+      "normal": ["Strength"],
+      "double": ["General", "Agility", "Passing"]
+    }
+  ]
+}
