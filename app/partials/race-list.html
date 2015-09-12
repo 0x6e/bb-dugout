@@ -1,13 +1,15 @@
 <div>
   <h1>The Dugout</h1>
 
-  <p>Number of teams: {{races.length}}</p>
-  <p>Search: <input ng-model="query.name"></p>
+  <div class="races">
+    <div class="row" ng-repeat="race in races track by $index" ng-if="$index % 2 == 0">
+      <div class="col-md-6" ng-repeat="i in [$index, $index + 1]" ng-if="races[i] != null">
+        <div>
+          <a href="#/races/{{races[i].id}}">{{races[i].name}}</a>
+          <p>{{races[i].description}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
-  <ul class="races">
-    <li ng-repeat="race in races | filter:query">
-      <a href="#/races/{{race.id}}">{{race.name}}</a>
-      <p>{{race.description}}</p>
-    </li>
-  </ul>
 </div>

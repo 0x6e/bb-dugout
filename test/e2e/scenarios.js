@@ -17,27 +17,9 @@ describe('The Dugout App', function() {
       browser.get('index.html#/races');
     });
 
-    it('should filter the race list as a user types into the search box', function() {
-
-      var raceList = element.all(by.repeater('race in races'));
-      var query = element(by.model('query.name'));
-
-      expect(raceList.count()).toBe(5);
-
-      query.sendKeys('Human');
-      expect(raceList.count()).toBe(1);
-
-      query.clear();
-      query.sendKeys('chaos');
-      expect(raceList.count()).toBe(2);
-      query.clear()
-    });
-
     it('should render race specific links', function() {
 
-      var query = element(by.model('query.name'));
-      query.sendKeys('amazon');
-      element.all(by.css('.races li a')).first().click();
+      element.all(by.css('.races .row .col-md-6 a')).first().click();
       browser.getLocationAbsUrl().then(function(url) {
         expect(url).toBe('/races/amazon');
       });
