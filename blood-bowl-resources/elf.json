@@ -1,0 +1,56 @@
+{
+  "name": "Elf",
+  "description": "When the NAF collapsed, many Elven teams were left penniless. Those teams that have survived the fallout are not as rich as the High Elf teams nor as well equipped, but they sure know how to play the game. Sporting facemasks and mohawks, they take to the pitch to relive the glory days they once played in.",
+  "rerollCap": 8,
+  "rerollPrice": 50000,
+  "players": [
+    {
+      "max": 16,
+      "title": "Lineman",
+      "cost": 60000,
+      "ma": 6,
+      "st": 3,
+      "ag": 4,
+      "av": 7,
+      "skills": [],
+      "normal": ["General", "Agility"],
+      "double": ["Strength", "Passing"]
+    },
+    {
+      "max": 2,
+      "title": "Thrower",
+      "cost": 70000,
+      "ma": 6,
+      "st": 3,
+      "ag": 4,
+      "av": 7,
+      "skills": ["Pass"],
+      "normal": ["General", "Agility", "Passing"],
+      "double": ["Strength"]
+    },
+    {
+      "max": 4,
+      "title": "Catcher",
+      "cost": 100000,
+      "ma": 8,
+      "st": 3,
+      "ag": 4,
+      "av": 7,
+      "skills": ["Catch", "Nerves of Steel"],
+      "normal": ["General", "Agility"],
+      "double": ["Strength", "Passing"]
+    },
+    {
+      "max": 2,
+      "title": "Blitzer",
+      "cost": 110000,
+      "ma": 7,
+      "st": 3,
+      "ag": 4,
+      "av": 8,
+      "skills": ["Block", "Side Step"],
+      "normal": ["General", "Agility"],
+      "double": ["Strength", "Passing"]
+    }
+  ]
+}

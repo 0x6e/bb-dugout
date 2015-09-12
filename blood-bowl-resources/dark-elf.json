@@ -36,7 +36,7 @@
       "st": 3,
       "ag": 4,
       "av": 7,
-      "skills": ["Shadowing, Stab"],
+      "skills": ["Shadowing", "Stab"],
       "normal": ["General", "Agility"],
       "double": ["Strength", "Passing"]
     },
