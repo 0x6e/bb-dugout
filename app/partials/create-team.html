@@ -1,0 +1,31 @@
+<h1>Team creation</h1>
+<ul ng-repeat="player in race.players">
+  <li ng-click="addPlayer(player.title)">{{player.title}}</li>
+</ul>
+
+<p>Treasury: {{team.treasury}}</p>
+<table>
+  <tr>
+    <th>#</th>
+    <th>Name</th>
+    <th>Title</th>
+    <th>MA</th>
+    <th>ST</th>
+    <th>AG</th>
+    <th>AV</th>
+    <th>Skills</th>
+    <th>Cost</th>
+  </tr>
+  <tr ng-repeat="player in team.players track by $index">
+    <td>{{player.max}}</td>
+    <td>{{player.title}}</td>
+    <td>{{player.cost}}</td>
+    <td>{{player.ma}}</td>
+    <td>{{player.st}}</td>
+    <td>{{player.ag}}</td>
+    <td>{{player.av}}</td>
+    <td><span ng-repeat="skill in player.skills">{{skill}}, </span></td>
+    <td><span ng-repeat="type in player.normal">{{type}}, </span></td>
+    <td><span ng-repeat="type in player.double">{{type}}, </span></td>
+  </tr>
+</table>

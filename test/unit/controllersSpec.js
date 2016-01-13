@@ -10,6 +10,13 @@ describe('Dugout controllers', function() {
         return angular.equals(this.actual, expected);
       }
     });
+
+    this.addMatchers({
+      toBeUndefined: function() {
+        // return typeof this.actual === 'undefined';
+        return angular.equals(this.actual, 'undefined');
+      }
+    });
   });
 
   beforeEach(module('dugoutApp'));
@@ -35,7 +42,7 @@ describe('Dugout controllers', function() {
   });
 
   describe('RaceDetailCtrl', function() {
-    var scope, $httpBackend, ctrl,
+    var scope, $httpBackend, ctrl, routeParams,
       aRaceData = function() {
         return {name: 'A Race'};
       };
@@ -46,10 +53,15 @@ describe('Dugout controllers', function() {
 
       $routeParams.raceId = 'race';
       scope = $rootScope.$new();
-      ctrl = $controller('RaceDetailCtrl', {$scope: scope});
+      routeParams = $routeParams;
+      ctrl = $controller('RaceDetailCtrl', {$scope: scope, $routeParams: routeParams});
     }));
 
-    it('should fetch phone details', function() {
+    it('should set the raceId in the javascript scope', function() {
+      expect(scope.raceId).toEqualData(routeParams.raceId);
+    });
+
+    it('should fetch race details', function() {
       expect(scope.race).toEqualData({});
       $httpBackend.flush();
 

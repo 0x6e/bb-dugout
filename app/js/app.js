@@ -15,6 +15,10 @@ dugoutApp.config(['$routeProvider', function($routeProvider) {
     templateUrl: 'partials/race-details.html',
     controller: 'RaceDetailCtrl'
   }).
+  when('/create/:raceId', {
+    templateUrl: 'partials/create-team.html',
+    controller: 'TeamCreationCtrl'
+  }).
   otherwise({
     redirectTo: '/races'
   });
