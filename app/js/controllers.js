@@ -13,18 +13,14 @@ dugoutControllers.controller('RaceDetailCtrl', ['$scope', '$routeParams', 'Race'
     });
   }]);
 
-dugoutControllers.controller('TeamCreationCtrl', ['$scope', '$routeParams', 'Race',
-  function($scope, $routeParams, Race) {
+dugoutControllers.controller('TeamCreationCtrl', ['$scope', '$routeParams', 'Race', 'Team',
+  function($scope, $routeParams, Race, Team) {
     $scope.raceId = $routeParams.raceId;
     $scope.race = Race.get({
       raceId: $routeParams.raceId
     });
 
-    $scope.team = {name: "Team name",
-    description: "A brand new team",
-    numberOfRerolls: 0,
-    treasury: 1000000,
-    players: []};
+    $scope.team = new Team("Team name", "A brand new team");
 
     $scope.addPlayer = function(title) {
       console.log("Clicked " + title);
