@@ -3,7 +3,7 @@
   "description": "Chaos Dwarfs are the twisted descendants of Dwarf explorers who have been terribly affected by the forces of Chaos, turning them into evil, self-centred creatures. In one way, however, they haven’t changed at all – they still love playing Blood Bowl! Chaos Dwarfs are not very numerous and make great use of sneaky Hobgoblin slaves to perform all kinds of tasks, including playing on their Blood Bowl teams.",
   "rerollCap": 8,
   "rerollPrice":70000,
-  "players": [
+  "playerTypes": [
     {
       "max": 16,
       "title": "Hobgoblin",

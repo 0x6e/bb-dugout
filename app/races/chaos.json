@@ -3,7 +3,7 @@
   "description": "Chaos teams are not noted for the subtlety or originality of their game play. A simple drive up the centre of the pitch, maiming and injuring as many opposing players as possible, is about the limit of their game plan. They rarely, if ever, worry about such minor considerations like picking up the ball and scoring touchdowns – not while there are any players left alive on the opposing team, anyway.",
   "rerollCap": 8,
   "rerollPrice": 60000,
-  "players": [
+  "playerTypes": [
     {
       "max": 16,
       "title": "Beastman",

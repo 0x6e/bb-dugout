@@ -7,24 +7,24 @@
 <p>0-{{race.rerollCap}} Re-roll counters: {{race.rerollPrice | number}} gold pieces each</p>
 
 <div class="players">
-  <div class="row" ng-repeat="player in race.players track by $index" ng-if="$index % 4 == 0">
-    <div class="col-md-3" ng-repeat="i in [$index, $index + 1, $index + 2, $index + 3]" ng-if="race.players[i] != null">
+  <div class="row" ng-repeat="player in race.playerTypes track by $index" ng-if="$index % 4 == 0">
+    <div class="col-md-3" ng-repeat="i in [$index, $index + 1, $index + 2, $index + 3]" ng-if="race.playerTypes[i] != null">
       <div class="player">
-        <h3>{{race.players[i].title}}</h3>
-        <p>{{race.players[i].cost | number}}</p>
+        <h3>{{race.playerTypes[i].title}}</h3>
+        <p>{{race.playerTypes[i].cost | number}}</p>
         <ul>
           <li class="attribute">MA</li>
-          <li class="value">{{race.players[i].ma}}</li>
+          <li class="value">{{race.playerTypes[i].ma}}</li>
           <li class="attribute">ST</li>
-          <li class="value">{{race.players[i].st}}</li>
+          <li class="value">{{race.playerTypes[i].st}}</li>
           <li class="attribute">AG</li>
-          <li class="value">{{race.players[i].ag}}</li>
+          <li class="value">{{race.playerTypes[i].ag}}</li>
           <li class="attribute">AV</li>
-          <li class="value">{{race.players[i].av}}</li>
+          <li class="value">{{race.playerTypes[i].av}}</li>
         </ul>
         <div class="skills">
           <h4>Skills</h4>
-          <p>{{race.players[i].skills | skill}}</p>
+          <p>{{race.playerTypes[i].skills | skill}}</p>
         </div>
       </div>
     </div>

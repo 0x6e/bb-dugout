@@ -3,7 +3,7 @@
   "description": "Long ago, driven by a desire for adventure, the Valkyries of the Norse settlement in Lustria sailed away from their men-folk and founded a colony deep within the estuary of the river Amaxon. Now these ferocious warriors have taken to the Blood Bowl pitch – and Nuffle save those who dare play against them!",
   "rerollCap": 8,
   "rerollPrice": 50000,
-  "players": [
+  "playerTypes": [
     {
       "max": 16,
       "title": "Linewoman",

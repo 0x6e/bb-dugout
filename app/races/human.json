@@ -3,7 +3,7 @@
   "description": "Although Human teams do not have the individual strengths or outstanding abilities available to other races, they do not suffer from any outstanding weakness either. This makes Human teams extremely flexible, equally at home running the ball, passing it, or ignoring it and pounding the opposition into the turf instead!",
   "rerollCap": 8,
   "rerollPrice": 50000,
-  "players": [
+  "playerTypes": [
     {
       "max": 16,
       "title": "Lineman",

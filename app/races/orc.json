@@ -2,7 +2,7 @@
   "name": "Orc",
   "description": "Orcs have been playing Blood Bowl since the game was invented, and Orc teams such as the Gouged Eye and Severed Heads are amongst the best in the league. Orc teams are tough and hard-hitting, grinding down the opposition’s line to create gaps for their excellent Orc Blitzers to exploit.",
   "rerollCap": 8,
-  "rerollPrice": 60000,
+  "playerTypes": 60000,
   "players": [
     {
       "max": 16,

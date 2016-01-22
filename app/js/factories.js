@@ -18,19 +18,19 @@ dugoutFactories.factory('Team', [ 'Race', function TeamFactory(Race) {
   };
 
   Team.prototype.addPlayer = function(title) {
-    for (var i = 0, length = this.race.players.length; i < length; ++i) {
-      var player = this.race.players[i];
-      if (player.title == title) {
-        if (player.count >= player.max)
+    for (var i = 0, length = this.race.playerTypes.length; i < length; ++i) {
+      var playerType = this.race.playerTypes[i];
+      if (playerType.title == title) {
+        if (playerType.count >= player.max)
           return;
 
-        if (this.treasury - player.cost < 0)
+        if (this.treasury - playerType.cost < 0)
           return;
 
-        this.treasury -= player.cost;
-        ++player.count
+        this.treasury -= playerType.cost;
+        ++playerType.count
 
-        this.players.push(player);
+        this.players.push(playerType);
         return;
       }
     }
@@ -41,10 +41,10 @@ dugoutFactories.factory('Team', [ 'Race', function TeamFactory(Race) {
       /* Callback function */
 
       //Add additional properties
-      for (var i = 0, length = race.players.length; i < length; ++i) {
-        var player = race.players[i];
-        if (!player.hasOwnProperty('count'))
-          player.count = 0;
+      for (var i = 0, length = race.playerTypes.length; i < length; ++i) {
+        var playerType = race.playerTypes[i];
+        if (!playerType.hasOwnProperty('count'))
+          playerType.count = 0;
       }
     });
   }

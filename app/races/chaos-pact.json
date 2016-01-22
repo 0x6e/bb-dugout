@@ -3,7 +3,7 @@
   "description": "Chaos Pact teams are a mix of evil and chaotic races. The Marauders while enthusiastic have to be coached to fill the different needs of the team while other races provide the muscle and fineness to support the Marauders. However due to the arrogance, stupidity, or animalistic nature of the team members, it is rare to see a well organized and effective Chaos Pact team. The Chaos All-Stars are the best example of how great this team can be with the right coach.",
   "rerollCap": 8,
   "rerollPrice": 70000,
-  "players": [
+  "playerTypes": [
     {
       "max": 12,
       "title": "Marauders",
