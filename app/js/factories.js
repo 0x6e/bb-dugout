@@ -5,7 +5,21 @@
 var dugoutFactories = angular.module('dugoutFactories', []);
 
 dugoutFactories.factory('Team', [ 'Race', function TeamFactory(Race) {
-
+  
+  /**
+   * Player constructor
+   */
+  function Player(name, number, playerType) {
+    this.name = name;
+    this.number = number;
+    this.type = playerType.title;
+    this.ma = playerType.ma;
+    this.st = playerType.st;
+    this.ag = playerType.ag;
+    this.av = playerType.av;
+    this.skills = playerType.skills;
+  }
+  
   /**
    * Team constructor
    */
@@ -28,9 +42,13 @@ dugoutFactories.factory('Team', [ 'Race', function TeamFactory(Race) {
           return;
 
         this.treasury -= playerType.cost;
-        ++playerType.count
+        ++playerType.count;
+        
+        var player = new Player(title + " #" + playerType.count
+                                , this.players.length + 1
+                                , playerType);
 
-        this.players.push(playerType);
+        this.players.push(player);
         return;
       }
     }

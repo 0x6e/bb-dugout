@@ -8,24 +8,21 @@
   <tr>
     <th>#</th>
     <th>Name</th>
-    <th>Title</th>
+    <th>Type</th>
     <th>MA</th>
     <th>ST</th>
     <th>AG</th>
     <th>AV</th>
     <th>Skills</th>
-    <th>Cost</th>
   </tr>
   <tr ng-repeat="player in team.players track by $index">
-    <td>{{player.max}}</td>
-    <td>{{player.title}}</td>
-    <td>{{player.cost}}</td>
+    <td>{{player.number}}</td>
+    <td>{{player.name}}</td>
+    <td>{{player.type}}</td>
     <td>{{player.ma}}</td>
     <td>{{player.st}}</td>
     <td>{{player.ag}}</td>
     <td>{{player.av}}</td>
     <td><span ng-repeat="skill in player.skills">{{skill}}, </span></td>
-    <td><span ng-repeat="type in player.normal">{{type}}, </span></td>
-    <td><span ng-repeat="type in player.double">{{type}}, </span></td>
   </tr>
 </table>
