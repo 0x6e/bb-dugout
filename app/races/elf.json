@@ -1,18 +1,18 @@
 {
-	"id": "human",
-	"name": "Human",
-	"description": "Although Human teams do not have the individual strengths or outstanding abilities available to other races, they do not suffer from any outstanding weakness either. This makes Human teams extremely flexible, equally at home running the ball, passing it, or ignoring it and pounding the opposition into the turf instead!",
+	"id": "elf",
+	"name": "Elf",
+	"description": "When the NAF collapsed, many Elven teams were left penniless. Those teams that have survived the fallout are not as rich as the High Elf teams nor as well equipped, but they sure know how to play the game. Sporting facemasks and mohawks, they take to the pitch to relive the glory days they once played in.",
 	"rerollCap": 8,
 	"rerollPrice": 50000,
 	"playerTypes": [
 		{
 			"max": 16,
 			"title": "Lineman",
-			"cost": 70000,
+			"cost": 60000,
 			"ma": 6,
 			"st": 3,
 			"ag": 4,
-			"av": 8,
+			"av": 7,
 			"skills": [],
 			"normal": [
 				"General",
@@ -26,14 +26,13 @@
 		{
 			"max": 2,
 			"title": "Thrower",
-			"cost": 90000,
+			"cost": 70000,
 			"ma": 6,
 			"st": 3,
 			"ag": 4,
-			"av": 8,
+			"av": 7,
 			"skills": [
-				"Pass",
-				"Safe Throw"
+				"Pass"
 			],
 			"normal": [
 				"General",
@@ -47,13 +46,14 @@
 		{
 			"max": 4,
 			"title": "Catcher",
-			"cost": 90000,
+			"cost": 100000,
 			"ma": 8,
 			"st": 3,
 			"ag": 4,
 			"av": 7,
 			"skills": [
-				"Catch"
+				"Catch",
+				"Nerves of Steel"
 			],
 			"normal": [
 				"General",
@@ -67,13 +67,14 @@
 		{
 			"max": 2,
 			"title": "Blitzer",
-			"cost": 100000,
+			"cost": 110000,
 			"ma": 7,
 			"st": 3,
 			"ag": 4,
 			"av": 8,
 			"skills": [
-				"Block"
+				"Block",
+				"Side Step"
 			],
 			"normal": [
 				"General",

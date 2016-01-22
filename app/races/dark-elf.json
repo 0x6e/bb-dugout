@@ -1,7 +1,7 @@
 {
-	"id": "human",
-	"name": "Human",
-	"description": "Although Human teams do not have the individual strengths or outstanding abilities available to other races, they do not suffer from any outstanding weakness either. This makes Human teams extremely flexible, equally at home running the ball, passing it, or ignoring it and pounding the opposition into the turf instead!",
+	"id": "dark-elf",
+	"name": "Dark Elf",
+	"description": "Evil beyond belief, skilled without doubt, the Dark Elves take to the pitch to show the world their superiority. Dark Elf teams prefer a malevolent and spiteful running game over the passing of their goodly cousins. Backed up by the ruthless Witch Elves and dangerous Assassins, a Dark Elf team has all the tools to power through, rather than around, any opposition line.",
 	"rerollCap": 8,
 	"rerollPrice": 50000,
 	"playerTypes": [
@@ -25,15 +25,14 @@
 		},
 		{
 			"max": 2,
-			"title": "Thrower",
-			"cost": 90000,
-			"ma": 6,
+			"title": "Runner",
+			"cost": 80000,
+			"ma": 7,
 			"st": 3,
 			"ag": 4,
-			"av": 8,
+			"av": 7,
 			"skills": [
-				"Pass",
-				"Safe Throw"
+				"Dump-Off"
 			],
 			"normal": [
 				"General",
@@ -45,15 +44,36 @@
 			]
 		},
 		{
-			"max": 4,
-			"title": "Catcher",
+			"max": 2,
+			"title": "Assasin",
 			"cost": 90000,
-			"ma": 8,
+			"ma": 6,
 			"st": 3,
 			"ag": 4,
 			"av": 7,
 			"skills": [
-				"Catch"
+				"Shadowing",
+				"Stab"
+			],
+			"normal": [
+				"General",
+				"Agility"
+			],
+			"double": [
+				"Strength",
+				"Passing"
+			]
+		},
+		{
+			"max": 4,
+			"title": "Blitzer",
+			"cost": 100000,
+			"ma": 7,
+			"st": 3,
+			"ag": 4,
+			"av": 8,
+			"skills": [
+				"Block"
 			],
 			"normal": [
 				"General",
@@ -66,14 +86,16 @@
 		},
 		{
 			"max": 2,
-			"title": "Blitzer",
-			"cost": 100000,
+			"title": "Witch Elf",
+			"cost": 120000,
 			"ma": 7,
 			"st": 3,
 			"ag": 4,
-			"av": 8,
+			"av": 7,
 			"skills": [
-				"Block"
+				"Frenzy",
+				"Dodge",
+				"Jump Up"
 			],
 			"normal": [
 				"General",

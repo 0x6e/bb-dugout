@@ -1,27 +1,47 @@
 [
-  {
-    "id": "amazon",
-    "name": "Amazon",
-    "description": "Long ago, driven by a desire for adventure, the Valkyries of the Norse settlement in Lustria sailed away from their men-folk and founded a colony deep within the estuary of the river Amaxon."
-  },
-  {
-    "id": "chaos-dwarf",
-    "name": "Chaos Dwarf",
-    "description": "Chaos Dwarfs are the twisted descendants of Dwarf explorers who have been terribly affected by the forces of Chaos, turning them into evil, self-centred creatures."
-  },
-  {
-    "id": "chaos",
-    "name": "Chaos",
-    "description": "Chaos teams are not noted for the subtlety or originality of their game play. A simple drive up the centre of the pitch, maiming and injuring as many opposing players as possible, is about the limit of their game plan."
-  },
-  {
-    "id": "human",
-    "name": "Human",
-    "description": "Although Human teams do not have the individual strengths or outstanding abilities available to other races, they do not suffer from any outstanding weakness either."
-  },
-  {
-    "id": "orc",
-    "name": "Orc",
-    "description": "Orcs have been playing Blood Bowl since the game was invented, and Orc teams such as the Gouged Eye and Severed Heads are amongst the best in the league."
-  }
+ {
+  "id": "amazon",
+  "name": "Amazon",
+  "description": "Long ago, driven by a desire for adventure, the Valkyries of the Norse settlement in Lustria sailed away from their men-folk and founded a colony deep within the estuary of the river Amaxon. Now these ferocious warriors have taken to the Blood Bowl pitch – and Nuffle save those who dare play against them!"
+ },
+ {
+  "id": "chaos-dwarf",
+  "name": "Chaos Dwarf",
+  "description": "Chaos Dwarfs are the twisted descendants of Dwarf explorers who have been terribly affected by the forces of Chaos, turning them into evil, self-centred creatures. In one way, however, they haven’t changed at all – they still love playing Blood Bowl! Chaos Dwarfs are not very numerous and make great use of sneaky Hobgoblin slaves to perform all kinds of tasks, including playing on their Blood Bowl teams."
+ },
+ {
+  "id": "chaos-pact",
+  "name": "Chaos Pact",
+  "description": "Chaos Pact teams are a mix of evil and chaotic races. The Marauders while enthusiastic have to be coached to fill the different needs of the team while other races provide the muscle and fineness to support the Marauders. However due to the arrogance, stupidity, or animalistic nature of the team members, it is rare to see a well organized and effective Chaos Pact team. The Chaos All-Stars are the best example of how great this team can be with the right coach."
+ },
+ {
+  "id": "chaos",
+  "name": "Chaos",
+  "description": "Chaos teams are not noted for the subtlety or originality of their game play. A simple drive up the centre of the pitch, maiming and injuring as many opposing players as possible, is about the limit of their game plan. They rarely, if ever, worry about such minor considerations like picking up the ball and scoring touchdowns – not while there are any players left alive on the opposing team, anyway."
+ },
+ {
+  "id": "dark-elf",
+  "name": "Dark Elf",
+  "description": "Evil beyond belief, skilled without doubt, the Dark Elves take to the pitch to show the world their superiority. Dark Elf teams prefer a malevolent and spiteful running game over the passing of their goodly cousins. Backed up by the ruthless Witch Elves and dangerous Assassins, a Dark Elf team has all the tools to power through, rather than around, any opposition line."
+ },
+ {
+  "id": "dwarf",
+  "name": "Dwarf",
+  "description": "Dwarfs seem to be ideal Blood Bowl players, being compact, tough, well-armoured and having a stubborn knack of refusing to die! Most successful Dwarf teams work to the principle that if they can take out all the other team’s potential scorers, and wear down the rest, then there won’t be anybody left to stop them scoring the winning touchdowns!"
+ },
+ {
+  "id": "elf",
+  "name": "Elf",
+  "description": "When the NAF collapsed, many Elven teams were left penniless. Those teams that have survived the fallout are not as rich as the High Elf teams nor as well equipped, but they sure know how to play the game. Sporting facemasks and mohawks, they take to the pitch to relive the glory days they once played in."
+ },
+ {
+  "id": "human",
+  "name": "Human",
+  "description": "Although Human teams do not have the individual strengths or outstanding abilities available to other races, they do not suffer from any outstanding weakness either. This makes Human teams extremely flexible, equally at home running the ball, passing it, or ignoring it and pounding the opposition into the turf instead!"
+ },
+ {
+  "id": "orc",
+  "name": "Orc",
+  "description": "Orcs have been playing Blood Bowl since the game was invented, and Orc teams such as the Gouged Eye and Severed Heads are amongst the best in the league. Orc teams are tough and hard-hitting, grinding down the opposition’s line to create gaps for their excellent Orc Blitzers to exploit."
+ }
 ]
