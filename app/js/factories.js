@@ -21,7 +21,7 @@ dugoutFactories.factory('Team', [ 'Race', function TeamFactory(Race) {
     for (var i = 0, length = this.race.playerTypes.length; i < length; ++i) {
       var playerType = this.race.playerTypes[i];
       if (playerType.title == title) {
-        if (playerType.count >= player.max)
+        if (playerType.count >= playerType.max)
           return;
 
         if (this.treasury - playerType.cost < 0)
