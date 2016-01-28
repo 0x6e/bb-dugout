@@ -20,3 +20,21 @@ dugoutControllers.controller('TeamCreationCtrl', ['$scope', '$routeParams', 'Tea
     $scope.team.setRace($routeParams.raceId)
 
   }]);
+
+dugoutControllers.controller('LoginController', ['$scope', '$rootScope', 'AUTH_EVENTS', 'AuthService',
+  function($scope, $rootScope, AUTH_EVENTS, AuthService) {
+    $scope.credentials = {
+      name: '',
+      password: ''
+    };
+
+    $scope.login = function(credentials) {
+      AuthService.login(credentials).then(function () {
+        $rootScope.$broadcast(AUTH_EVENTS.loginSuccess);
+        console.log('login success!')
+      }, function() {
+        $rootScope.$broadcast(AUTH_EVENTS.loginFailed);
+        console.log('login FAILED')
+      });
+    };
+  }]);

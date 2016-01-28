@@ -2,6 +2,7 @@ var dugoutApp = angular.module('dugoutApp', [
   'ngRoute',
   'dugoutControllers',
   'dugoutFilters',
+  'dugoutAuthentication',
   'dugoutServices',
   'dugoutFactories'
 ]);
@@ -19,6 +20,10 @@ dugoutApp.config(['$routeProvider', function($routeProvider) {
   when('/create/:raceId', {
     templateUrl: 'partials/create-team.html',
     controller: 'TeamCreationCtrl'
+  }).
+  when('/login', {
+    templateUrl: 'partials/login.html',
+    controller: 'LoginController'
   }).
   otherwise({
     redirectTo: '/races'
