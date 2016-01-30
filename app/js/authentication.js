@@ -31,6 +31,18 @@ dugoutAuthentication.service('AuthService', function($http, API_ENDPOINT, Sessio
       }
     });
   };
+
+  this.signup = function(credentials) {
+    return $http.post(API_ENDPOINT.url + '/signup', credentials)
+    .then( function(result) {
+      if (result.data.success) {
+        console.log('Signed up! ');
+      }
+      else {
+        console.log('Signup FAILED: ' + result.data.msg);
+      }
+    });
+  };
 });
 
 
